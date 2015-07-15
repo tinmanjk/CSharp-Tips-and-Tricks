@@ -1,15 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Debugging
+﻿namespace Debugging
 {
-    class Program
+    using System.Collections.Generic;
+
+    public static class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
+            var student = new Student("John", "Doe");
+
+            var studentWithToStringMethod = new StudentWithToStringMethod("John", "Doe");
+
+            var studentWithDebuggerDisplayAttribute = new StudentWithDebuggerDisplayAttribute("John", "Doe");
+
+            var studentWithDebuggerBrowsableAttribute = new StudentWithDebuggerBrowsableAttribute(
+                "John",
+                "Doe",
+                new List<int> { 3, 3, 6, 6 });
         }
     }
 }
