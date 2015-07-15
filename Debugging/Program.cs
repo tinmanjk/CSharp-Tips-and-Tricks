@@ -13,7 +13,7 @@
 
         public static void DebuggerVariableDisplay()
         {
-            // Set brakepoints and observe debugging info of the following variables
+            // Set breakpoints and observe debugging info of the following variables
             var student = new Student("John", "Doe");
 
             var studentWithToStringMethod = new StudentWithToStringMethod("John", "Doe");
