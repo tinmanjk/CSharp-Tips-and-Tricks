@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CallerInfoAttributesExamples.cs" />
     <Compile Include="StudentWithDebuggerBrowsableAttribute.cs" />
     <Compile Include="StudentWithDebuggerDisplayAttribute.cs" />
     <Compile Include="StudentWithToStringMethod.cs" />
