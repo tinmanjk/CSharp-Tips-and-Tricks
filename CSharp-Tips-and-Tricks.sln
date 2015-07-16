@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExposeInternals", "UnitTest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExposeInternals.Tests", "UnitTesting\ExposeInternals.Tests\ExposeInternals.Tests.csproj", "{B07972E9-3665-4F0D-8C2D-93D364013F1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyntacticSugar", "SyntacticSugar\SyntacticSugar.csproj", "{F2DDBA51-8128-49D4-A569-BE275607535E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{B07972E9-3665-4F0D-8C2D-93D364013F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B07972E9-3665-4F0D-8C2D-93D364013F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B07972E9-3665-4F0D-8C2D-93D364013F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2DDBA51-8128-49D4-A569-BE275607535E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2DDBA51-8128-49D4-A569-BE275607535E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2DDBA51-8128-49D4-A569-BE275607535E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2DDBA51-8128-49D4-A569-BE275607535E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
