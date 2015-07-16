@@ -1,4 +1,4 @@
-﻿namespace Debugging
+﻿namespace Debugging.DebuggerVariableDisplay
 {
     public class Student
     {

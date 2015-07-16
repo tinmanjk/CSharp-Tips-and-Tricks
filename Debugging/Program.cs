@@ -3,6 +3,9 @@
     using System;
     using System.Collections.Generic;
 
+    using Debugging.CallerInfoAttributes;
+    using Debugging.DebuggerVariableDisplay;
+
     public static class Program
     {
         public static void Main()

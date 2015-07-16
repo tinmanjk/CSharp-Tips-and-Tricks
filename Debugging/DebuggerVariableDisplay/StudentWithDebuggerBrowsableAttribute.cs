@@ -1,4 +1,4 @@
-﻿namespace Debugging
+﻿namespace Debugging.DebuggerVariableDisplay
 {
     using System.Collections.Generic;
     using System.Diagnostics;
