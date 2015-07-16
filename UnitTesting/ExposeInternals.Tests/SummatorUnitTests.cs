@@ -36,5 +36,15 @@
             var result = summator.Sum(int.MaxValue, int.MinValue);
             Assert.AreEqual(-1, result);
         }
+
+        // GetZero
+        [TestMethod]
+        public void GetZeroReturnsZero()
+        {
+            var summator = new Summator();
+            var privateObject = new PrivateObject(summator);
+            var getZeroValue = privateObject.Invoke("GetZero");
+            Assert.AreEqual(0, getZeroValue);
+        }
     }
 }

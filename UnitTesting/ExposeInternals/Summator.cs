@@ -7,5 +7,10 @@
             var sum = (long)a + b;
             return sum;
         }
+
+        private int GetZero()
+        {
+            return 0;
+        }
     }
 }
