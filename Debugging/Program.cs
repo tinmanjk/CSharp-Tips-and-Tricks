@@ -45,6 +45,8 @@
             Console.WriteLine("CI_BUILD");
 #else
             Console.WriteLine("Neither DEBUG nor CI_BUILD");
+// #error Neither DEBUG nor CI_BUILD
+#warning Neither DEBUG nor CI_BUILD
 #endif
         }
     }
