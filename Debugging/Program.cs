@@ -12,6 +12,7 @@
         {
             DebuggerVariableDisplay();
             CallerInfoAttributes();
+            PreprocessorSymbols();
         }
 
         public static void DebuggerVariableDisplay()
@@ -34,6 +35,17 @@
             Console.WriteLine(CallerInfoAttributesExamples.GetCallerMemberName());
             Console.WriteLine(CallerInfoAttributesExamples.GetCallerFilePath());
             Console.WriteLine(CallerInfoAttributesExamples.GetCallerLineNumber());
+        }
+
+        public static void PreprocessorSymbols()
+        {
+#if DEBUG
+            Console.WriteLine("DEBUG");
+#elif CI_BUILD
+            Console.WriteLine("CI_BUILD");
+#else
+            Console.WriteLine("Neither DEBUG nor CI_BUILD");
+#endif
         }
     }
 }
