@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>f2d4e89d-efeb-4a4f-a078-6b2276ad197d</ProjectGuid>
+    <ProjectGuid>{AED49CD6-45DA-41B6-A388-DF11C5ACC05D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Traps</RootNamespace>
@@ -43,6 +43,9 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomNumbers\HighQualityRandomNumbers.cs" />
+    <Compile Include="RandomNumbers\IRandomNumbersPrinter.cs" />
+    <Compile Include="RandomNumbers\RandomInstancesWithTheSameSeed.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
