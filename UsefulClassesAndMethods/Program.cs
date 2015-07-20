@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
 
+    using UsefulClassesAndMethods.MethodDeprecation;
     using UsefulClassesAndMethods.Tuple;
 
     public static class Program
@@ -10,6 +11,7 @@
         public static void Main()
         {
             TupleDemo();
+            MethodDeprecationDemo();
         }
 
         private static void TupleDemo()
@@ -24,6 +26,18 @@
 
             // Property or indexer 'System.Tuple<int,decimal>.Item1' cannot be assigned to -- it is read only
             // result.Item1 = 1;
+        }
+
+        private static void MethodDeprecationDemo()
+        {
+            var xmlReaderFactory = new XmlReaderFactory();
+            xmlReaderFactory.CreateXmlReader();
+
+            // Compilation warning:
+            // xmlReaderFactory.CreateXml();
+            
+            // Compilation error:
+            // xmlReaderFactory.Create();
         }
     }
 }
