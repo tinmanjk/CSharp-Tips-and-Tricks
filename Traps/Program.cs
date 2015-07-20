@@ -1,7 +1,9 @@
 ﻿namespace Traps
 {
     using System;
+    using System.Security.Policy;
 
+    using Traps.LinqMultipleEnumeration;
     using Traps.RandomNumbers;
     using Traps.References;
 
@@ -16,6 +18,7 @@
             Console.WriteLine(new string('-', 70));
             RandomNumbers();
             Console.WriteLine(new string('-', 70));
+            LinqMultipleEnumeration();
         }
 
         private static void References()
@@ -81,6 +84,17 @@
 
             var highQualityRandomNumbers = new HighQualityRandomNumbers(4);
             highQualityRandomNumbers.PrintRandomNumbers();
+        }
+
+        private static void LinqMultipleEnumeration()
+        {
+            var enumerateObjects = new EnumerateObjects();
+
+            Console.WriteLine("==== Multiple enumerations:");
+            enumerateObjects.LinqQueryMultipleEnumeration();
+
+            Console.WriteLine("==== Single enumeration (calling .ToList()):");
+            enumerateObjects.LinqQuerySingleEnumeration();
         }
     }
 }

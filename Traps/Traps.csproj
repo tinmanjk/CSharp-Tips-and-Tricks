@@ -46,6 +46,7 @@
     <Compile Include="RandomNumbers\HighQualityRandomNumbers.cs" />
     <Compile Include="RandomNumbers\IRandomNumbersPrinter.cs" />
     <Compile Include="RandomNumbers\RandomInstancesWithTheSameSeed.cs" />
+    <Compile Include="LinqMultipleEnumeration\EnumerateObjects.cs" />
     <Compile Include="References\Person.cs" />
     <Compile Include="References\PersonWithEquals.cs" />
     <Compile Include="References\PersonWithEqualityOperator.cs" />
