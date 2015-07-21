@@ -1,7 +1,6 @@
 ﻿namespace Traps
 {
     using System;
-    using System.Security.Policy;
 
     using Traps.LinqMultipleEnumeration;
     using Traps.RandomNumbers;
@@ -70,7 +69,7 @@
             var string1 = "some value";
             var string2 = "some value";
             Console.Write("Please enter \"some value\": ");
-            var stringFromConsole = Console.ReadLine();
+            var stringFromConsole = Console.ReadLine() ?? string.Empty;
             var stringInternFromConsole = string.Intern(stringFromConsole);
             Console.WriteLine("ReferenceEquals(string1, string2) = {0}", ReferenceEquals(string1, string2));
             Console.WriteLine("ReferenceEquals(string1, stringFromConsole) = {0}", ReferenceEquals(string1, stringFromConsole));
