@@ -42,6 +42,13 @@
         {
             object number = "Five";
 
+            Console.WriteLine("The type of 'number' is: {0}", number.GetType());
+
+            if (number is string)
+            {
+                Console.WriteLine("'number is string' is true");
+            }
+
             //// This will cause an unhandled exception of type 'InvalidCastException' because the specified cast is not valid.
             //// var numberAsInt = (int?)number;
 
