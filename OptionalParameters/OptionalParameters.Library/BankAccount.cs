@@ -4,7 +4,7 @@
     {
         //// Try changing the default value of the money parameter whitout pre-comping the client
         //// Try adding new optional parameter whitout pre-comping the client
-        public BankAccount(string accountHolder, decimal money = 1000) // string country = "USA"
+        public BankAccount(string accountHolder = default(string), decimal money = 1000) // string country = "USA"
         {
             this.AccountHolder = accountHolder;
             this.Money = money;
