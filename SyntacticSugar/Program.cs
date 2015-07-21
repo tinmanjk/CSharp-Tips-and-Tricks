@@ -8,10 +8,14 @@
     {
         public static void Main()
         {
+            Console.WriteLine(new string('-', 70));
             CombinableEnumValues();
+            Console.WriteLine(new string('-', 70));
+            CastingVsAsOperator();
+            Console.WriteLine(new string('-', 70));
         }
 
-        public static void CombinableEnumValues()
+        private static void CombinableEnumValues()
         {
             var bottomRightMargin = Margins.Bottom | Margins.Right;
             var topLeftMargin = Margins.Top | Margins.Left;
@@ -32,6 +36,21 @@
             Console.WriteLine("bottomRightMargin ^= Margins.Bottom => {0}", bottomRightMargin);
             bottomRightMargin ^= Margins.Bottom;
             Console.WriteLine("bottomRightMargin ^= Margins.Bottom => {0}", bottomRightMargin);
+        }
+
+        private static void CastingVsAsOperator()
+        {
+            object number = "Five";
+
+            //// This will cause an unhandled exception of type 'InvalidCastException' because the specified cast is not valid.
+            //// var numberAsInt = (int?)number;
+
+            //// var numberAsInt = number as int?;
+            //// This will cause an unhandled exception of type 'InvalidOperationException' because numberAsInt will be null
+            //// Console.WriteLine(numberAsInt.Value);
+            
+            //// When using the 'as' operator we should always consider the possible null value
+            //// Console.WriteLine(numberAsInt.GetValueOrDefault(0));
         }
     }
 }
