@@ -50,6 +50,7 @@
     <Compile Include="References\Person.cs" />
     <Compile Include="References\PersonWithEquals.cs" />
     <Compile Include="References\PersonWithEqualityOperator.cs" />
+    <Compile Include="RethrowingExceptions\ExceptionThrower.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

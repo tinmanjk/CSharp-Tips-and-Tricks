@@ -5,6 +5,7 @@
     using Traps.LinqMultipleEnumeration;
     using Traps.RandomNumbers;
     using Traps.References;
+    using Traps.RethrowingExceptions;
 
     public static class Program
     {
@@ -18,6 +19,8 @@
             RandomNumbers();
             Console.WriteLine(new string('-', 70));
             LinqMultipleEnumeration();
+            Console.WriteLine(new string('-', 70));
+            PreservingStacktraceWhenRethrowingExceptions();
         }
 
         private static void References()
@@ -94,6 +97,29 @@
 
             Console.WriteLine("==== Single enumeration (calling .ToList()):");
             enumerateObjects.LinqQuerySingleEnumeration();
+        }
+
+        private static void PreservingStacktraceWhenRethrowingExceptions()
+        {
+            // Notice TargetSite and StackTrace
+            var exceptionThrower = new ExceptionThrower();
+            try
+            {
+                exceptionThrower.WithoutStacktrace();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.StackTrace);
+            }
+
+            try
+            {
+                exceptionThrower.WithStacktrace();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.StackTrace);
+            }
         }
     }
 }
