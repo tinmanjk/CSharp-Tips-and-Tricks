@@ -3,6 +3,7 @@
     using System;
 
     using SyntacticSugar.CombinableEnumValues;
+    using SyntacticSugar.Yield;
 
     public static class Program
     {
@@ -13,6 +14,7 @@
             Console.WriteLine(new string('-', 70));
             CastingVsAsOperator();
             Console.WriteLine(new string('-', 70));
+            YieldDemo();
         }
 
         private static void CombinableEnumValues()
@@ -58,6 +60,14 @@
             
             //// When using the 'as' operator we should always consider the possible null value
             //// Console.WriteLine(numberAsInt.GetValueOrDefault(0));
+        }
+
+        private static void YieldDemo()
+        {
+            foreach (var evenNumber in YieldNumbersGenerator.EvenNumbers(51, 60))
+            {
+                Console.WriteLine(evenNumber);
+            }
         }
     }
 }
