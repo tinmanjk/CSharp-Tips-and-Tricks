@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics;
 
     using Debugging.CallerInfoAttributes;
     using Debugging.DebuggerVariableDisplay;
@@ -10,12 +11,16 @@
     {
         public static void Main()
         {
+            Console.WriteLine(new string('-', 70));
             DebuggerVariableDisplay();
+            Console.WriteLine(new string('-', 70));
             CallerInfoAttributes();
+            Console.WriteLine(new string('-', 70));
             PreprocessorSymbols();
+            Console.WriteLine(new string('-', 70));
         }
 
-        public static void DebuggerVariableDisplay()
+        private static void DebuggerVariableDisplay()
         {
             // Set breakpoints and observe debugging info of the following variables
             var student = new Student("John", "Doe");
@@ -30,14 +35,14 @@
                 new List<int> { 3, 3, 6, 6 });
         }
 
-        public static void CallerInfoAttributes()
+        private static void CallerInfoAttributes()
         {
             Console.WriteLine(CallerInfoAttributesExamples.GetCallerMemberName());
             Console.WriteLine(CallerInfoAttributesExamples.GetCallerFilePath());
             Console.WriteLine(CallerInfoAttributesExamples.GetCallerLineNumber());
         }
 
-        public static void PreprocessorSymbols()
+        private static void PreprocessorSymbols()
         {
 #if DEBUG
             Console.WriteLine("DEBUG");
@@ -48,6 +53,13 @@
 // #error Neither DEBUG nor CI_BUILD
 #warning Neither DEBUG nor CI_BUILD
 #endif
+            CallOnlyInDebug();
+        }
+
+        [Conditional("DEBUG")]
+        private static void CallOnlyInDebug()
+        {
+            Console.WriteLine("CallOnlyInDebug() called");
         }
     }
 }
