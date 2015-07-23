@@ -11,16 +11,17 @@
     {
         public static void Main()
         {
-            Console.WriteLine(new string('-', 70));
+            Console.WriteLine(new string('=', 75));
             References();
-            Console.WriteLine(new string('-', 70));
+            Console.WriteLine(new string('=', 75));
             StringReferences();
-            Console.WriteLine(new string('-', 70));
+            Console.WriteLine(new string('=', 75));
             RandomNumbers();
-            Console.WriteLine(new string('-', 70));
+            Console.WriteLine(new string('=', 75));
             LinqMultipleEnumeration();
-            Console.WriteLine(new string('-', 70));
+            Console.WriteLine(new string('=', 75));
             PreservingStacktraceWhenRethrowingExceptions();
+            Console.WriteLine(new string('=', 75));
         }
 
         private static void References()

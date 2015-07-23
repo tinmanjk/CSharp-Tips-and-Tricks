@@ -13,13 +13,13 @@
         public static void Main()
         {
             DebuggerVariableDisplay();
-            Console.WriteLine(new string('-', 70));
+            Console.WriteLine(new string('=', 75));
             CallerInfoAttributes();
-            Console.WriteLine(new string('-', 70));
+            Console.WriteLine(new string('=', 75));
             PreprocessorSymbols();
-            Console.WriteLine(new string('-', 70));
+            Console.WriteLine(new string('=', 75));
             CurrentSystemInformation();
-            Console.WriteLine(new string('-', 70));
+            Console.WriteLine(new string('=', 75));
         }
 
         private static void DebuggerVariableDisplay()

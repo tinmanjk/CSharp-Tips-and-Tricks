@@ -10,8 +10,11 @@
     {
         public static void Main()
         {
+            Console.WriteLine(new string('=', 75));
             TupleDemo();
+            Console.WriteLine(new string('=', 75));
             MethodDeprecationDemo();
+            Console.WriteLine(new string('=', 75));
         }
 
         private static void TupleDemo()

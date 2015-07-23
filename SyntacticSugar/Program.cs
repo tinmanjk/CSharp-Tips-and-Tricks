@@ -9,12 +9,13 @@
     {
         public static void Main()
         {
-            Console.WriteLine(new string('-', 70));
+            Console.WriteLine(new string('=', 75));
             CombinableEnumValues();
-            Console.WriteLine(new string('-', 70));
+            Console.WriteLine(new string('=', 75));
             CastingVsAsOperator();
-            Console.WriteLine(new string('-', 70));
+            Console.WriteLine(new string('=', 75));
             YieldDemo();
+            Console.WriteLine(new string('=', 75));
         }
 
         private static void CombinableEnumValues()
