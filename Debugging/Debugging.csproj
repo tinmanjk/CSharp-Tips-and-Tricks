@@ -58,6 +58,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DebuggerVariableDisplay\Student.cs" />
+    <Compile Include="SystemInformation\SystemInformationGetter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

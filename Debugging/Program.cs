@@ -6,17 +6,19 @@
 
     using Debugging.CallerInfoAttributes;
     using Debugging.DebuggerVariableDisplay;
+    using Debugging.SystemInformation;
 
     public static class Program
     {
         public static void Main()
         {
-            Console.WriteLine(new string('-', 70));
             DebuggerVariableDisplay();
             Console.WriteLine(new string('-', 70));
             CallerInfoAttributes();
             Console.WriteLine(new string('-', 70));
             PreprocessorSymbols();
+            Console.WriteLine(new string('-', 70));
+            CurrentSystemInformation();
             Console.WriteLine(new string('-', 70));
         }
 
@@ -60,6 +62,12 @@
         private static void CallOnlyInDebug()
         {
             Console.WriteLine("CallOnlyInDebug() called");
+        }
+
+        private static void CurrentSystemInformation()
+        {
+            var systemInformationGetter = new SystemInformationGetter();
+            systemInformationGetter.WriteSystemInformationToConsole();
         }
     }
 }
