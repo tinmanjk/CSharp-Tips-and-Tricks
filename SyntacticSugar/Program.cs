@@ -64,9 +64,13 @@
 
         private static void YieldDemo()
         {
-            foreach (var evenNumber in YieldNumbersGenerator.EvenNumbers(51, 60))
+            foreach (var evenNumber in YieldNumbersGenerator.EvenNumbers(50, 60))
             {
-                Console.WriteLine(evenNumber);
+                Console.WriteLine("!! Iterated number {0}", evenNumber);
+                if (evenNumber > 55)
+                {
+                    break;
+                }
             }
         }
     }
