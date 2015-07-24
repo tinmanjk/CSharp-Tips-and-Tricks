@@ -149,7 +149,7 @@
             {
                 var bang = new Bang();
             }
-            catch (Exception exception)
+            catch (Exception)
             {
                 Console.WriteLine("Calling instance constructor failed!!!");
             }

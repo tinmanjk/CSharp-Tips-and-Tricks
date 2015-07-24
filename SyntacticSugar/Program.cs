@@ -3,6 +3,7 @@
     using System;
 
     using SyntacticSugar.CombinableEnumValues;
+    using SyntacticSugar.ConstrainingGenerics;
     using SyntacticSugar.Yield;
 
     public static class Program
@@ -15,6 +16,8 @@
             CastingVsAsOperator();
             Console.WriteLine(new string('=', 75));
             YieldDemo();
+            Console.WriteLine(new string('=', 75));
+            ConstrainingGenerics();
             Console.WriteLine(new string('=', 75));
         }
 
@@ -73,6 +76,31 @@
                     break;
                 }
             }
+        }
+
+        private static void ConstrainingGenerics()
+        {
+            // This is allowed (where T : ClassB)
+            var templateClassInstance = new TemplateClass<ClassB>();
+
+            // This is also allowed (ClassC is successor of ClassB)
+            var templateClassInstance2 = new TemplateClass<ClassC>();
+
+            // This is invalid:
+            //// var templateClassInstance3 = new TemplateClass<ClassA>();
+            // 'ClassA' cannot be used as type parameter 'T'
+            // There is no implicit reference conversion from 'ClassA' to 'ClassB'.
+
+            // These are allowed (where T : IClassable)
+            var templateClassConstrainedByInterface =
+                new TemplateClassConstrainedByInterface<ClassA>();
+            var templateClassConstrainedByInterface2 =
+                new TemplateClassConstrainedByInterface<ClassB>();
+            var templateClassConstrainedByInterface3 =
+                new TemplateClassConstrainedByInterface<StructureA>();
+
+            // This is allowed (where T : class)
+
         }
     }
 }
