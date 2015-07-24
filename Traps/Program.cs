@@ -2,6 +2,7 @@
 {
     using System;
 
+    using Traps.ExceptionsInStaticConstructors;
     using Traps.LinqMultipleEnumeration;
     using Traps.RandomNumbers;
     using Traps.References;
@@ -21,6 +22,8 @@
             LinqMultipleEnumeration();
             Console.WriteLine(new string('=', 75));
             PreservingStacktraceWhenRethrowingExceptions();
+            Console.WriteLine(new string('=', 75));
+            ExceptionsInStaticConstructors();
             Console.WriteLine(new string('=', 75));
         }
 
@@ -120,6 +123,35 @@
             catch (Exception ex)
             {
                 Console.WriteLine(ex.StackTrace);
+            }
+        }
+
+        private static void ExceptionsInStaticConstructors()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                try
+                {
+                    // Notice the call of the static constructor
+                    // Also notice that the static constructor is only called once
+                    Bang.StaticMethod();
+                }
+                catch (Exception exception)
+                {
+                    Console.WriteLine(
+                        "Exception of type {0} (Inner: {1}).",
+                        exception.GetType().Name,
+                        exception.InnerException != null ? exception.InnerException.GetType().Name : "none");
+                }
+            }
+
+            try
+            {
+                var bang = new Bang();
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine("Calling instance constructor failed!!!");
             }
         }
     }
