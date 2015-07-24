@@ -100,7 +100,19 @@
                 new TemplateClassConstrainedByInterface<StructureA>();
 
             // This is allowed (where T : class)
+            var templateClassConstrainedByReference =
+                new TemplateClassConstrainedByReference<ClassA, ClassB>();
 
+            // This is invalid
+            //// var templateClassConstrainedByReference2 =
+            ////     new TemplateClassConstrainedByReference<ClassB, ClassA>();
+            // 'ClassA' cannot be used as type parameter 'T2' in the generic type or method 'TemplateClassConstrainedByReference<T,T2>'.
+            // There is no implicit reference conversion from 'ClassA' to 'ClassB'.
+
+            // This is also invalid
+            //// var templateClassConstrainedByReference3 =
+            ////     new TemplateClassConstrainedByReference<StructureA, StructureA>();
+            // 'StructureA' must be a reference type in order to use it as parameter 'T' in the generic type or method 'TemplateClassConstrainedByReference<T,T2>'
         }
     }
 }

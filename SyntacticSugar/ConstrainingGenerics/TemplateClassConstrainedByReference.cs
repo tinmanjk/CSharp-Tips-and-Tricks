@@ -5,6 +5,7 @@
     public class TemplateClassConstrainedByReference<T, T2>
         where T : class
         where T2 : class, T
+        //// where T : struct // for value types
     {
     }
 }
