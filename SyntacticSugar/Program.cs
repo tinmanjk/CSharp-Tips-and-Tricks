@@ -112,7 +112,18 @@
             // This is also invalid
             //// var templateClassConstrainedByReference3 =
             ////     new TemplateClassConstrainedByReference<StructureA, StructureA>();
-            // 'StructureA' must be a reference type in order to use it as parameter 'T' in the generic type or method 'TemplateClassConstrainedByReference<T,T2>'
+            // 'StructureA' must be a reference type in order to use it as parameter 'T'
+            // in the generic type or method 'TemplateClassConstrainedByReference<T,T2>'
+
+            // This is allowed (where T : new())
+            var templateClassConstrainedByEmptyConstructor =
+                new TemplateClassConstrainedByEmptyConstructor<ClassA>();
+
+            // This is invalid
+            //// var templateClassConstrainedByEmptyConstructor2 =
+            ////     new TemplateClassConstrainedByEmptyConstructor<ClassC>();
+            // 'ClassC' must be a non-abstract type with a public parameterless constructor
+            // in order to use it as parameter 'T' in the generic type or method 'TemplateClassConstrainedByEmptyConstructor<T>'
         }
     }
 }
