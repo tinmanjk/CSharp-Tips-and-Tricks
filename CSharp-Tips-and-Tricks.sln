@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debugging", "Debugging\Debugging.csproj", "{47918B57-E83D-4D8B-9928-93A0F869F7F8}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptionalParameters.Library", "OptionalParameters\OptionalParameters.Library\OptionalParameters.Library.csproj", "{15E3CEE7-8B17-4E5E-BAE0-717B5BBAA5E6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptionalParameters.Client", "OptionalParameters\OptionalParameters.Client\OptionalParameters.Client.csproj", "{F490AC57-8ED5-4718-B7CB-44432CFC0CF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Performance", "Performance\Performance.csproj", "{24DDBC82-3C0B-4D42-AA0F-F9FD67AE53F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -78,6 +80,12 @@ Global
 		{F490AC57-8ED5-4718-B7CB-44432CFC0CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F490AC57-8ED5-4718-B7CB-44432CFC0CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F490AC57-8ED5-4718-B7CB-44432CFC0CF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24DDBC82-3C0B-4D42-AA0F-F9FD67AE53F1}.CIBuild|Any CPU.ActiveCfg = Release|Any CPU
+		{24DDBC82-3C0B-4D42-AA0F-F9FD67AE53F1}.CIBuild|Any CPU.Build.0 = Release|Any CPU
+		{24DDBC82-3C0B-4D42-AA0F-F9FD67AE53F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24DDBC82-3C0B-4D42-AA0F-F9FD67AE53F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24DDBC82-3C0B-4D42-AA0F-F9FD67AE53F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24DDBC82-3C0B-4D42-AA0F-F9FD67AE53F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
