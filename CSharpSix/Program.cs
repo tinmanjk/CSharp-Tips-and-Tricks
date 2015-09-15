@@ -5,6 +5,7 @@
     using CSharpSix.AutoPropertyEnhancements;
     using CSharpSix.ExpressionBodiedFunctionMembers;
     using CSharpSix.NameofExpressions;
+    using CSharpSix.StringInterpolation;
 
     public static class Program
     {
@@ -16,6 +17,12 @@
             ExpressionBodiedFunctionMembers();
             Console.WriteLine(new string('=', 75));
             NameofExpressions();
+            Console.WriteLine(new string('=', 75));
+            StringInterpolation();
+            Console.WriteLine(new string('=', 75));
+            NullCoalescingOperator();
+            Console.WriteLine(new string('=', 75));
+            NullConditionalOperator();
             Console.WriteLine(new string('=', 75));
         }
 
@@ -54,6 +61,44 @@
             {
                 Console.WriteLine(ex.Message);
             }
+        }
+
+        private static void StringInterpolation()
+        {
+            var personWithStringInterpolation =
+                new PersonWithStringInterpolation("Nikolay", "Kostov");
+            Console.WriteLine(personWithStringInterpolation.Name);
+
+            var a = 1;
+            var b = 2;
+            Console.WriteLine($"{nameof(a)} + {nameof(b)} = {a + b}");
+        }
+
+        // This is not new in C# 6
+        private static void NullCoalescingOperator()
+        {
+            int? temperatureInSofia = null;
+            Console.WriteLine(temperatureInSofia ?? 22);
+
+            // Chaining
+            int? temperatureInBulgaria = null;
+            int? temperatureInEurope = null;
+            Console.WriteLine(temperatureInSofia ?? temperatureInBulgaria ?? temperatureInEurope ?? 22);
+        }
+
+        private static void NullConditionalOperator()
+        {
+            string[] listOfStrings = null;
+
+            int? lengthOrNull = listOfStrings?.Length;
+            Console.WriteLine("lengthOrNull.HasValue: {0}", lengthOrNull.HasValue);
+
+            var firstValue = listOfStrings?[0];
+            Console.WriteLine("firstValue == null? {0}", firstValue == null);
+
+            // Chaining
+            var substringValue = listOfStrings?[0]?.Substring(0, 1) ?? "[null]";
+            Console.WriteLine("substringValue = {0}", substringValue);
         }
     }
 }
