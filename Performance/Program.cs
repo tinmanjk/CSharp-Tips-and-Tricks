@@ -14,7 +14,7 @@
             Console.WriteLine(new string('=', 75));
         }
 
-        // https://msdn.microsoft.com/en-us/library/2dts52z7.aspx?f=255&MSPPError=-2147217396
+        // https://msdn.microsoft.com/en-us/library/2dts52z7.aspx
         // If none of the fields of the current instance and obj are reference types,
         // the Equals method performs a byte-by-byte comparison of the two objects in memory.
         // Otherwise, it uses reflection to compare the corresponding fields of obj and this instance.

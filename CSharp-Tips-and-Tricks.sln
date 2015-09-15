@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptionalParameters.Client",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Performance", "Performance\Performance.csproj", "{24DDBC82-3C0B-4D42-AA0F-F9FD67AE53F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpSix", "CSharpSix\CSharpSix.csproj", "{A4FDA1CC-0B3E-4236-925F-EF22FF2D77F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CIBuild|Any CPU = CIBuild|Any CPU
@@ -86,6 +88,12 @@ Global
 		{24DDBC82-3C0B-4D42-AA0F-F9FD67AE53F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24DDBC82-3C0B-4D42-AA0F-F9FD67AE53F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24DDBC82-3C0B-4D42-AA0F-F9FD67AE53F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4FDA1CC-0B3E-4236-925F-EF22FF2D77F5}.CIBuild|Any CPU.ActiveCfg = Release|Any CPU
+		{A4FDA1CC-0B3E-4236-925F-EF22FF2D77F5}.CIBuild|Any CPU.Build.0 = Release|Any CPU
+		{A4FDA1CC-0B3E-4236-925F-EF22FF2D77F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4FDA1CC-0B3E-4236-925F-EF22FF2D77F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4FDA1CC-0B3E-4236-925F-EF22FF2D77F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4FDA1CC-0B3E-4236-925F-EF22FF2D77F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
