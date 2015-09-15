@@ -43,6 +43,9 @@
   <ItemGroup>
     <Compile Include="AutoPropertyEnhancements\Person.cs" />
     <Compile Include="AutoPropertyEnhancements\ReadOnlyPerson.cs" />
+    <Compile Include="ExpressionBodiedFunctionMembers\PersonWithChildren.cs" />
+    <Compile Include="ExpressionBodiedFunctionMembers\Point.cs" />
+    <Compile Include="NameofExpressions\PersonWithValidation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
