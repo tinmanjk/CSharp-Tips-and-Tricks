@@ -1,4 +1,4 @@
-﻿namespace SyntacticSugar.ConstrainingGenerics
+﻿namespace ConstrainingGenerics
 {
     // T has to be a reference type (class, interface, delegate, or array type)
     // T can also be any other type parameter that is constrained to be a reference type.

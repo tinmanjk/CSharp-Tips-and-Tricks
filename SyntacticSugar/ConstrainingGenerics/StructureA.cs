@@ -1,4 +1,4 @@
-﻿namespace SyntacticSugar.ConstrainingGenerics
+﻿namespace ConstrainingGenerics
 {
     public struct StructureA : IHaveInterface
     {

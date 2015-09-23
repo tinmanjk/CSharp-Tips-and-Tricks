@@ -1,4 +1,4 @@
-﻿namespace SyntacticSugar.CombinableEnumValues
+﻿namespace CombinableEnumValues
 {
     using System;
 

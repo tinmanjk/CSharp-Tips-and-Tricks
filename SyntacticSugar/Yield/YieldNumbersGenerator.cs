@@ -1,4 +1,4 @@
-﻿namespace SyntacticSugar.Yield
+﻿namespace Yield
 {
     using System;
     using System.Collections.Generic;
@@ -7,7 +7,7 @@
     {
         public static IEnumerable<int> EvenNumbers(int from, int to)
         {
-            for (int i = from; i <= to; i++)
+            for (var i = from; i <= to; i++)
             {
                 Console.WriteLine("Processing number {0}", i);
                 if (i % 2 == 0)
