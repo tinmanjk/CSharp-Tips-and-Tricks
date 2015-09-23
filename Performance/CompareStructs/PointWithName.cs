@@ -1,4 +1,4 @@
-﻿namespace Performance.StructComparingPerformance
+﻿namespace CompareStructs
 {
     public struct PointWithName
     {

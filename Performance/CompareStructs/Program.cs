@@ -1,24 +1,15 @@
-﻿namespace Performance
+﻿namespace CompareStructs
 {
     using System;
     using System.Diagnostics;
 
-    using Performance.StructComparingPerformance;
-
+    // https://msdn.microsoft.com/en-us/library/2dts52z7.aspx
+    // If none of the fields of the current instance and obj are reference types,
+    // the Equals method performs a byte-by-byte comparison of the two objects in memory.
+    // Otherwise, it uses reflection to compare the corresponding fields of obj and this instance.
     public static class Program
     {
         public static void Main()
-        {
-            Console.WriteLine(new string('=', 75));
-            StructComparingPerformance();
-            Console.WriteLine(new string('=', 75));
-        }
-
-        // https://msdn.microsoft.com/en-us/library/2dts52z7.aspx
-        // If none of the fields of the current instance and obj are reference types,
-        // the Equals method performs a byte-by-byte comparison of the two objects in memory.
-        // Otherwise, it uses reflection to compare the corresponding fields of obj and this instance.
-        private static void StructComparingPerformance()
         {
             const int TimesToCompare = 10000000;
             var stopwatch = Stopwatch.StartNew();
@@ -44,17 +35,17 @@
 
             stopwatch = Stopwatch.StartNew();
             var pointWithNameAndEquals1 = new PointWithNameAndEquals
-                                              {
-                                                  X = 1,
-                                                  Y = 2,
-                                                  Name = "Point with name and Equals() 1"
-                                              };
+            {
+                X = 1,
+                Y = 2,
+                Name = "Point with name and Equals() 1"
+            };
             var pointWithNameAndEquals2 = new PointWithNameAndEquals
-                                              {
-                                                  X = 1,
-                                                  Y = 2,
-                                                  Name = "Point with name and Equals() 2"
-                                              };
+            {
+                X = 1,
+                Y = 2,
+                Name = "Point with name and Equals() 2"
+            };
             for (var i = 0; i < TimesToCompare; i++)
             {
                 pointWithNameAndEquals1.Equals(pointWithNameAndEquals2);
