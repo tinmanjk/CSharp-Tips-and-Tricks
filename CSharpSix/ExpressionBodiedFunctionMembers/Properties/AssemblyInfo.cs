@@ -1,14 +1,15 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CSharpSix")]
+[assembly: AssemblyTitle("ExpressionBodiedFunctionMembers")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CSharpSix")]
+[assembly: AssemblyProduct("ExpressionBodiedFunctionMembers")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8910a4ef-3937-4c65-92b5-2acd8f3ba4fc")]
+[assembly: Guid("59185f53-732a-4b99-bd51-2f66cfd5d1c5")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -1,4 +1,4 @@
-﻿namespace CSharpSix.ExpressionBodiedFunctionMembers
+﻿namespace ExpressionBodiedFunctionMembers
 {
     using System;
 

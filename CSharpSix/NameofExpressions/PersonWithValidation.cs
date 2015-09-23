@@ -1,4 +1,4 @@
-﻿namespace CSharpSix.NameofExpressions
+﻿namespace NameofExpressions
 {
     using System;
 

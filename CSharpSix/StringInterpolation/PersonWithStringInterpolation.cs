@@ -1,4 +1,4 @@
-﻿namespace CSharpSix.StringInterpolation
+﻿namespace StringInterpolation
 {
     public class PersonWithStringInterpolation
     {

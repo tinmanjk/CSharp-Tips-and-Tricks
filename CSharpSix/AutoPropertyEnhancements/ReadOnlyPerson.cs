@@ -1,4 +1,4 @@
-﻿namespace CSharpSix.AutoPropertyEnhancements
+﻿namespace AutoPropertyEnhancements
 {
     public class ReadOnlyPerson
     {
