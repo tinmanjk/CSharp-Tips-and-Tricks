@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
 
+    using UsefulClassesAndMethods.FileSystemWatcherDemo;
     using UsefulClassesAndMethods.MethodDeprecation;
     using UsefulClassesAndMethods.Tuple;
 
@@ -15,6 +16,7 @@
             Console.WriteLine(new string('=', 75));
             MethodDeprecationDemo();
             Console.WriteLine(new string('=', 75));
+            FileSystemWatcherDemo();
         }
 
         private static void TupleDemo()
@@ -41,6 +43,14 @@
             
             // Compilation error:
             // xmlReaderFactory.Create();
+        }
+
+        private static void FileSystemWatcherDemo()
+        {
+            var fileSystemWatcherLogger = new FileSystemWatcherLogger(Environment.CurrentDirectory);
+            Console.WriteLine($"Started watching {Environment.CurrentDirectory}");
+            Console.WriteLine("Press [enter] to stop watching...");
+            Console.ReadLine();
         }
     }
 }

@@ -72,6 +72,9 @@
             var a = 1;
             var b = 2;
             Console.WriteLine($"{nameof(a)} + {nameof(b)} = {a + b}");
+
+            // Escaping
+            Console.WriteLine($"{{name}}");
         }
 
         // This is not new in C# 6
