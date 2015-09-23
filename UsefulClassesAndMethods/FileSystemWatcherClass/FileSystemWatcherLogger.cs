@@ -1,4 +1,4 @@
-﻿namespace UsefulClassesAndMethods.FileSystemWatcherDemo
+﻿namespace FileSystemWatcherClass
 {
     using System;
     using System.IO;

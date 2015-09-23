@@ -1,14 +1,15 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("UsefulClassesAndMethods")]
+[assembly: AssemblyTitle("MethodDeprecation")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("UsefulClassesAndMethods")]
+[assembly: AssemblyProduct("MethodDeprecation")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("002963fb-c2a4-46cd-9e6a-0392d9ac6e83")]
+[assembly: Guid("8d981e2b-aa29-48de-aaac-ae2d6bca1cd3")]
 
 // Version information for an assembly consists of the following four values:
 //

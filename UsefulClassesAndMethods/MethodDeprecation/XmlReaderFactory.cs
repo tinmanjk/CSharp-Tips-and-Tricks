@@ -1,4 +1,4 @@
-﻿namespace UsefulClassesAndMethods.MethodDeprecation
+﻿namespace MethodDeprecation
 {
     using System;
 

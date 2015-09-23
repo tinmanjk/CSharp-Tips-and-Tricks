@@ -1,4 +1,4 @@
-﻿namespace UsefulClassesAndMethods.Tuple
+﻿namespace Tuples
 {
     using System;
     using System.Collections.Generic;
