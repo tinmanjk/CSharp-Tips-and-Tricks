@@ -17,6 +17,7 @@
             MethodDeprecationDemo();
             Console.WriteLine(new string('=', 75));
             FileSystemWatcherDemo();
+            Console.WriteLine(new string('=', 75));
         }
 
         private static void TupleDemo()
