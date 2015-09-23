@@ -1,0 +1,9 @@
+{
+  "settings": {
+    "documentationRules": {
+      "xmlHeader": false,
+      "documentInterfaces": false,
+      "documentExposedElements": false,
+    }
+  }
+}
