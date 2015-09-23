@@ -26,7 +26,7 @@
             }
 
             Console.WriteLine();
-            
+
             Console.Write("secondRandomNumbersGenerator: ");
             for (var i = 0; i < this.numberOfRandomNumbers; i++)
             {

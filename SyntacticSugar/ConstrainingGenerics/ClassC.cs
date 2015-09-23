@@ -3,7 +3,7 @@
     public class ClassC : ClassB
     {
         public ClassC(string input)
-        {   
+        {
         }
     }
 }

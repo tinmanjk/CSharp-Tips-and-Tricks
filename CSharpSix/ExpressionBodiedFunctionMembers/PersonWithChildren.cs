@@ -14,11 +14,11 @@
 
         public List<PersonWithChildren> Children { get; set; }
 
+        public string Name => this.FirstName + " " + this.LastName;
+
         private string FirstName { get; set; }
 
         private string LastName { get; set; }
-
-        public string Name => this.FirstName + " " + this.LastName;
 
         public PersonWithChildren this[string name] =>
             this.Children.FirstOrDefault(

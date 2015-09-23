@@ -23,7 +23,7 @@
             this.lastName = lastName;
         }
 
-        //  public string Name => $"{this.firstName} {this.lastName}";
+        // public string Name => $"{this.firstName} {this.lastName}";
         public string Name
         {
             get

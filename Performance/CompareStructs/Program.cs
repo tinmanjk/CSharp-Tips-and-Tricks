@@ -32,7 +32,6 @@
 
             Console.WriteLine("Point with reference member: {0}", stopwatch.Elapsed);
 
-
             stopwatch = Stopwatch.StartNew();
             var pointWithNameAndEquals1 = new PointWithNameAndEquals
             {

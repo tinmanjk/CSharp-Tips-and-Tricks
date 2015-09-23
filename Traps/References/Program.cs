@@ -35,7 +35,8 @@
                 firstPersonWithEqualityOperator == secondPersonWithEqualityOperator);
         }
 
-        private static void CompareObjects<T>(T firstObject, T secondObject) where T : class
+        private static void CompareObjects<T>(T firstObject, T secondObject)
+            where T : class
         {
             Console.WriteLine(
                 "f{1} == s{2} is {0}",
