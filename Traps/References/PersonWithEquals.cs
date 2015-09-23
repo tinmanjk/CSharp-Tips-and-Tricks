@@ -1,4 +1,4 @@
-﻿namespace Traps.References
+﻿namespace References
 {
     public class PersonWithEquals : Person
     {

@@ -1,4 +1,4 @@
-﻿namespace Traps.ExceptionsInStaticConstructors
+﻿namespace ExceptionsInStaticConstructors
 {
     using System;
 

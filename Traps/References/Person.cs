@@ -1,4 +1,4 @@
-﻿namespace Traps.References
+﻿namespace References
 {
     // https://msdn.microsoft.com/en-US/library/ms173147.aspx
     public class Person

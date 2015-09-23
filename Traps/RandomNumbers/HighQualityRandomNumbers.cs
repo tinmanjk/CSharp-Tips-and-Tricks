@@ -1,4 +1,4 @@
-﻿namespace Traps.RandomNumbers
+﻿namespace RandomNumbers
 {
     using System;
     using System.Security.Cryptography;

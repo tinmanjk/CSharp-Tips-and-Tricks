@@ -1,4 +1,4 @@
-﻿namespace Traps.RethrowingExceptions
+﻿namespace PreservingStacktraceWhenRethrowingExceptions
 {
     using System;
 

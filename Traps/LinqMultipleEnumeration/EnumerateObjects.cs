@@ -1,4 +1,4 @@
-﻿namespace Traps.LinqMultipleEnumeration
+﻿namespace LinqMultipleEnumeration
 {
     using System;
     using System.Collections.Generic;

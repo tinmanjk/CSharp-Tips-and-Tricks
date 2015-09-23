@@ -1,4 +1,4 @@
-﻿namespace Traps.RandomNumbers
+﻿namespace RandomNumbers
 {
     public interface IRandomNumbersPrinter
     {

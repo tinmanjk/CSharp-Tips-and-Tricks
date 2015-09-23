@@ -1,4 +1,4 @@
-﻿namespace Traps.RandomNumbers
+﻿namespace RandomNumbers
 {
     using System;
 
@@ -20,7 +20,7 @@
         public void PrintRandomNumbers()
         {
             Console.Write("firstRandomNumbersGenerator: ");
-            for (int i = 0; i < this.numberOfRandomNumbers; i++)
+            for (var i = 0; i < this.numberOfRandomNumbers; i++)
             {
                 Console.Write("{0} ", this.firstRandomNumbersGenerator.Next());
             }
@@ -28,7 +28,7 @@
             Console.WriteLine();
             
             Console.Write("secondRandomNumbersGenerator: ");
-            for (int i = 0; i < this.numberOfRandomNumbers; i++)
+            for (var i = 0; i < this.numberOfRandomNumbers; i++)
             {
                 Console.Write("{0} ", this.secondRandomNumbersGenerator.Next());
             }
