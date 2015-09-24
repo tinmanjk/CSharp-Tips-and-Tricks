@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    public class CustomStringEqualityComparer : IEqualityComparer<string>
+    public class StringLengthEqualityComparer : IEqualityComparer<string>
     {
         public bool Equals(string x, string y)
         {
