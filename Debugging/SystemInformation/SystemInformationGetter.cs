@@ -22,15 +22,15 @@
             Console.WriteLine("Page size: {0}", Environment.SystemPageSize);
             Console.WriteLine("Physical memory mapped to the process context: {0}", Environment.WorkingSet);
 
-            Console.WriteLine(new string('-', 60));
+            Console.WriteLine(new string('-', 50));
             Console.Write("Logical drives: ");
             Array.ForEach(Environment.GetLogicalDrives(), x => Console.Write("{0} ", x));
             Console.WriteLine();
 
-            Console.WriteLine(new string('-', 60));
+            Console.WriteLine(new string('-', 50));
             Console.WriteLine("Stack trace: {0}", Environment.StackTrace);
 
-            Console.WriteLine(new string('-', 60));
+            Console.WriteLine(new string('-', 50));
             Console.WriteLine("Path environment variable: {0}", Environment.GetEnvironmentVariable("Path"));
         }
     }

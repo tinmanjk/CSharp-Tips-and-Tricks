@@ -12,14 +12,15 @@
     {
         public static void Main()
         {
+            Console.WriteLine(new string('=', 50));
             DebuggerVariableDisplay();
-            Console.WriteLine(new string('=', 75));
+            Console.WriteLine(new string('=', 50));
             CallerInfoAttributes();
-            Console.WriteLine(new string('=', 75));
+            Console.WriteLine(new string('=', 50));
             PreprocessorSymbols();
-            Console.WriteLine(new string('=', 75));
+            Console.WriteLine(new string('=', 50));
             CurrentSystemInformation();
-            Console.WriteLine(new string('=', 75));
+            Console.WriteLine(new string('=', 50));
         }
 
         private static void DebuggerVariableDisplay()

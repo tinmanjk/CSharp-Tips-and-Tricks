@@ -7,7 +7,7 @@
         public static void Main(string[] args)
         {
             References();
-            Console.WriteLine(new string('=', 75));
+            Console.WriteLine(new string('=', 50));
             StringReferences();
         }
 

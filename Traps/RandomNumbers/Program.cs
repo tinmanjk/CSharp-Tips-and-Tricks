@@ -9,7 +9,7 @@
             var randomInstancesWithTheSameSeed = new RandomInstancesWithTheSameSeed(4);
             randomInstancesWithTheSameSeed.PrintRandomNumbers();
 
-            Console.WriteLine(new string('=', 75));
+            Console.WriteLine(new string('=', 50));
 
             var highQualityRandomNumbers = new HighQualityRandomNumbers(4);
             highQualityRandomNumbers.PrintRandomNumbers();
