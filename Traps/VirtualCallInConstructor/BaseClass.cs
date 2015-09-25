@@ -4,6 +4,7 @@
     {
         protected BaseClass()
         {
+            // Virtual member call in constructor
             this.AddToDatabase();
         }
 

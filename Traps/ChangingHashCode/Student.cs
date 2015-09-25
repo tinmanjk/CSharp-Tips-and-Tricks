@@ -8,6 +8,7 @@
 
         public override int GetHashCode()
         {
+            // Non-readonly property referenced in 'GetHashCode()'
             return this.Id;
         }
     }
